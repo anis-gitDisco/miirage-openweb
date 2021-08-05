@@ -51,6 +51,8 @@ const useStyles = makeStyles({
   },
 });
 
+console.log(window.location.origin);
+
 const Profile = () => {
   const classes = useStyles();
 
@@ -67,7 +69,7 @@ const Profile = () => {
         {pieces.map((piece) => {
           return (
             <div key={piece.id} className={classes.profilePieces}>
-              <img className={classes.profilePiece} src={piece.image} />
+              <img alt="User profile" className={classes.profilePiece} src={`${window.location.origin}/data/pieces/${piece.image}`} />
             </div>
           );
         })}
@@ -79,15 +81,15 @@ const Profile = () => {
 const pieces = [
   {
     id: 0,
-    image: Van,
+    image: 'van.gif',
   },
   {
     id: 1,
-    image: Trash,
+    image: 'dumpster.gif',
   },
   {
     id: 2,
-    image: Power,
+    image: 'power.png',
   },
 ];
 
