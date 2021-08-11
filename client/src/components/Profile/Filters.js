@@ -6,7 +6,7 @@ const Filters = ({ text, selected}) => {
   
   return(
     <div className={`${classes.container} ${(selected && classes.selected)}`}>
-      <div className={classes.follow}> {text} </div>
+      <div className={classes.text}> {text} </div>
     </div>
   )
 };
@@ -14,19 +14,13 @@ const Filters = ({ text, selected}) => {
 const useStyles = makeStyles({
   container: {
     width: '25%',
-    marginLeft: 10,
-    marginRight: 10,
-    marginTop: 20
+    margin: '20px 20px 0',
   },
   selected: {
     borderBottom: '1px solid #fff',
   },
-  follow: {
-    color: '#fff',
-    fontFamily: "'Lato', sans-serif",
-    textAlign: 'center',
-    paddingTop: 8,
-    paddingBottom: 8,
+  text: {
+    padding: '0 0 8px',
     fontSize: '.8em'
   }
 })

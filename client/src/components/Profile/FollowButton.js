@@ -13,8 +13,7 @@ const FollowButton = () => {
 const useStyles = makeStyles({
   container: {
     backgroundColor: '#fff',
-    width: '38%',
-    borderRadius: 5,
+    width: '40%',
   },
   follow: {
     color: '#000',
