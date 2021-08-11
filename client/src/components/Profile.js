@@ -3,10 +3,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ProfilePhoto from '../assets/images/profile.png';
 
-import Van from '../assets/pieces/van.gif';
-import Trash from '../assets/pieces/dumpster.gif';
-import Power from '../assets/pieces/power.png';
-
 const useStyles = makeStyles({
   root: {
     display: 'flex',
@@ -50,8 +46,6 @@ const useStyles = makeStyles({
     width: '100%',
   },
 });
-
-console.log(window.location.origin);
 
 const Profile = () => {
   const classes = useStyles();

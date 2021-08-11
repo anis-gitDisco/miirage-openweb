@@ -31,10 +31,13 @@ const styles = {
 const Navigation = () => {
   const classes = useStyles();
   const history = useHistory();
-  const [value, setValue] = React.useState('map');
+  const [value, setValue] = React.useState();
 
   const handleChange = (event, value) => {
     setValue(value);
+    setTimeout(() => {
+      setValue();
+    }, 2000);
     history.push(`./${value}`);
   };
   return (
